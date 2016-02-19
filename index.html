@@ -1,48 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Image-processing-project-student by andre-wojtowicz</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Mini-GIMP template project for Image processing course : ">
 
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mini-GIMP template project for Image processing course</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/andre-wojtowicz/image-processing-project-student">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/andre-wojtowicz/image-processing-project-student/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/andre-wojtowicz/image-processing-project-student/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/andre-wojtowicz/image-processing-project-student">View on GitHub</a>
 
-      <section>
-        <div id="title">
-          <h1>Image-processing-project-student</h1>
-          <p>Mini GIMP</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/andre-wojtowicz">andre-wojtowicz</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+          <h1 id="project_title">Mini-GIMP template project for Image processing course</h1>
+          <h2 id="project_tagline"></h2>
 
-        <p>temp</p>
-      </section>
-
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/andre-wojtowicz/image-processing-project-student/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/andre-wojtowicz/image-processing-project-student/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>This program is a student template of a project for <strong>Image processing</strong> course. During 15 laboratories the students have to program a mini-GIMP application.</p>
+
+<p>The code is written in C++ which uses <a href="https://www.qt.io">Qt</a> library; tested 5.1.1 version, should compile and run on Windows (MinGW or MSVC), Linux and MacOS. The code may be completed in Qt Creator or Visual Studio. The program works with all <a href="http://en.wikipedia.org/wiki/Portable_anymap">Netpbm</a> files as well as JPEG, PNG, etc.</p>
+
+<p>The program has the following image processing procedures to be completed:</p>
+
+<ol>
+<li>negative (already done as an example),</li>
+<li>grayscale conversion,</li>
+<li>correction (brightness, contrast and gamma),</li>
+<li>histogram (construction, stretching and equalizing),</li>
+<li>convolution (with custom filter),</li>
+<li>blurring (uniform and Gaussian),</li>
+<li>binarization (manual, gradient, iterative bimodal, Otsu and Niblack),</li>
+<li>noise reduction (median and bilateral),</li>
+<li>morphology (structural elements, dilation, erosion, opening and closing),</li>
+<li>edge detection (Roberts, Prewitt, Sobel, Laplacian with zero-crossing and Canny),</li>
+<li>procedural textures (height map, normal mapping, horizon mapping and Perlin noise),</li>
+<li>lines and rectangles detection (Hough),</li>
+<li>corners detection (Harris),</li>
+<li>segmentation (watershed).</li>
+</ol>
+
+<p><strong>The completed version of the project is stored on the different private repository</strong>. It is stored for lecturer's as a helpfull tool to assess students' solutions. If you need it, please send me an e-mail.</p>
+
+<h1>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h1>
+
+<p>The following screenshots regards to completed version of the program:</p>
+
+<p><img src="screen1.png" alt=""></p>
+
+<p><img src="screen2.png" alt=""></p>
+
+<p><img src="screen3.png" alt=""></p>
+
+<h1>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h1>
+
+<p>The project consists of 3 folders:</p>
+
+<ul>
+<li>
+<strong>images</strong> - contains images saved in <code>pnm</code> format,</li>
+<li>
+<strong>res</strong> - here are icons for the program,</li>
+<li>
+<strong>src</strong> - main sources.</li>
+</ul>
+
+<p>In sources you can find two modules:</p>
+
+<ul>
+<li>
+<strong>core</strong> - files concering loading and saving images and transofmations,</li>
+<li>
+<strong>gui</strong> - everything related to a graphic user interface.</li>
+</ul>
+
+<p>Writing solutions means completing the <code>.cpp</code> files in a directory <code>src/core/transformations/</code> and a file <code>src/core/histogram.cpp</code>. </p>
+
+<p>A hint that something needs to be implement is:</p>
+
+<div class="highlight highlight-source-c++"><pre><span class="pl-en">qDebug</span>() &lt;&lt; Q_FUNC_INFO &lt;&lt; "Not implemented yet!";</pre></div>
+
+<h2>
+<a id="debugging" class="anchor" href="#debugging" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Debugging</h2>
+
+<p>If you like debugging by printing values of variables you just need to use <code>qDebug()</code> in the following way:</p>
+
+<div class="highlight highlight-source-c++"><pre><span class="pl-en">qDebug</span>() &lt;&lt; "width =" &lt;&lt; image-&gt;width();</pre></div>
+
+<h2>
+<a id="pnm-class" class="anchor" href="#pnm-class" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PNM class</h2>
+
+<p>Main class to handle an image is <strong>PNM</strong> which inherits <a href="http://qt-project.org/doc/qt-5.1/qtgui/qimage.html">QImage</a>. Main methods are:</p>
+
+<ul>
+<li>
+<strong>pixel(...)</strong> - getting a value of a given pixel of an image,</li>
+<li>
+<strong>setPixel(...)</strong> - saving in the image given value of a pixel,</li>
+<li>
+<strong>format()</strong> - getting a format of the image.</li>
+</ul>
+
+<p>We are interested only in three formats of images:</p>
+
+<ul>
+<li>
+<strong>QImage::Format_Mono</strong> - black and white,</li>
+<li>
+<strong>QImage::Format_Indexed8</strong> - grayscale,</li>
+<li>
+<strong>QImage::Format_RGB32</strong> - 3-channels color.</li>
+</ul>
+
+<p>To get a value of a pixel from a desired channel some functions from <a href="http://qt-project.org/doc/qt-5.1/qtgui/qcolor.html">QColor</a> will be helpful:</p>
+
+<ul>
+<li>
+<strong>qRed(...)</strong>,</li>
+<li>
+<strong>qGreen(...)</strong>,</li>
+<li>
+<strong>qBlue(...)</strong>,</li>
+<li>
+<strong>qGray(...)</strong>.</li>
+</ul>
+
+<p>An example is in <code>src/core/transformations/negative_image.cpp</code></p>
+
+<h2>
+<a id="automatic-loading-of-an-image" class="anchor" href="#automatic-loading-of-an-image" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Automatic loading of an image</h2>
+
+<p>If you setup a working directory on a folder <code>images</code> then when you run the program you should see on the screen <code>lenna_512x512.pnm</code>.</p>
+
+<p>More information you will find at the top of <code>src/gui/mainwindow.h</code>.</p>
+
+<p>During compilation you might find useful automatic launching of a transformation.</p>
+
+<h2>
+<a id="signals" class="anchor" href="#signals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Signals</h2>
+
+<p>Some of next transformations may perform a bit longer so it will be OK to display some auxiliary messages. You may achieve it by so-called signals:</p>
+
+<ul>
+<li>
+<strong>message(QString)</strong>,</li>
+<li>
+<strong>progress(int)</strong>.</li>
+</ul>
+
+<p>Example:</p>
+
+<div class="highlight highlight-source-c++"><pre>emit <span class="pl-en">message</span>(<span class="pl-s"><span class="pl-pds">"</span>Edge detection...<span class="pl-pds">"</span></span>);</pre></div>
+
+<p>or</p>
+
+<div class="highlight highlight-source-c++"><pre>emit <span class="pl-en">progress</span>(<span class="pl-c1">100</span>*x/<span class="pl-k">double</span>(image-&gt;<span class="pl-en">width</span>()));</pre></div>
+
+<h2>
+<a id="mixing-transformations" class="anchor" href="#mixing-transformations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mixing transformations</h2>
+
+<p>Some of transformations need using others. In transformations you must use <code>transform()</code> method, i.e.:</p>
+
+<div class="highlight highlight-source-c++"><pre>PNM* grayImage = ConversionGrayscale(image).transform();</pre></div>
+
+<p>Most of the transformations use parameters (constants, sigmas, regions etc.). It's done by methods:</p>
+
+<ul>
+<li>
+<strong>setParameter(...)</strong>,</li>
+<li>
+<strong>getParameter(...)</strong>.</li>
+</ul>
+
+<p>An exemplar use is in a file <code>src/core/tools.cpp</code> or <code>src/core/transformations/edge_canny.cpp</code></p>
+
+<p>In order to display messages or progress of used transformation you must put in its construction an instance of <code>ImageViewer</code>, i.e.:</p>
+
+<div class="highlight highlight-source-c++"><pre>emit <span class="pl-en">message</span>(<span class="pl-s"><span class="pl-pds">"</span>Blurring...<span class="pl-pds">"</span></span>);
+
+BlurGaussian <span class="pl-en">blurTrans</span>(grayImage, getSupervisor());
+blurTrans.setParameter(<span class="pl-s"><span class="pl-pds">"</span>size<span class="pl-pds">"</span></span>,  <span class="pl-c1">3</span>);
+blurTrans.setParameter(<span class="pl-s"><span class="pl-pds">"</span>sigma<span class="pl-pds">"</span></span>, <span class="pl-c1">1.6</span>);
+
+PNM* blurredImage = blurTrans.transform();</pre></div>
+
+<p>Please remember to delete redundant variables before you return a result, i.e.:</p>
+
+<div class="highlight highlight-source-c++"><pre><span class="pl-k">delete</span> grayImage;
+
+<span class="pl-k">return</span> newImage;</pre></div>
+
+<h2>
+<a id="possible-performance-increase" class="anchor" href="#possible-performance-increase" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Possible performance increase</h2>
+
+<ul>
+<li>resign from <code>src/core/matrix.h</code> and work directly on arrays,</li>
+<li>avoid <code>QImage::pixel(...)</code> and <code>QImage::setPixel(...)</code> and work directly on arrays given by <code>QImage::bits()</code>
+</li>
+</ul>
+
+<h1>
+<a id="programming-in-visual-studio-2012-with-image-watch-extenstion" class="anchor" href="#programming-in-visual-studio-2012-with-image-watch-extenstion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Programming in Visual Studio 2012 with Image Watch extenstion</h1>
+
+<p>There is <a href="https://download.qt.io/official_releases/vsaddin/">Visual Studio Add-in</a> for Qt5 so you don't have to use Qt Creator and what's more, debugging is far easier and faster.</p>
+
+<p>Microsoft released <a href="https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d">Image Watch</a> extension which allows to display an image during debugging.</p>
+
+<ol>
+<li>import the project (<code>QT5 &gt; Open Qt Project File (.pro)...</code>),</li>
+<li>open <code>pnm.h</code> file and uncomment lines 11-13,</li>
+<li>add to your project a path to a directory with private Qt headers (in <em>Solution Explorer</em> <code>Properties &gt; Configuration Properties &gt; C/C++ &gt; General &gt; Additional Include Directories</code>):
+
+<ul>
+<li>this can be for example <code>C:\software\qt\5.1.1\msvc2012\include\QtGui\5.1.1</code>. </li>
+</ul>
+</li>
+<li>to your directory <code>Documents\Visual Studio 2012\Visualizers</code> copy <code>src\core\pnm.natvis</code>,</li>
+<li>install <strong>Image Watch</strong> extension (<code>Tools &gt; Extensions and Updates...</code> and in <em>Online</em> search <em>Image Watch</em>).</li>
+</ol>
+
+<p>Effects you can check on the negative operation. During debugging you have to display <em>Image Watch</em> window (<code>View &gt; Other Windows &gt; Image Watch</code>) and when the debugger reaches breakpoints you can watch any PNM-type variable (with the exception of binary images! but you can handle this by conversion to a grayscale). When you click on a variable you must also tick <em>4-Channel Ignore Alpha</em>.</p>
+
+<p><img src="image-watch.png" alt="Image Watch example"></p>
+
+<h1>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h1>
+
+<p>Co-author of the project is <a href="http://quati.pl">Krzysztof Szarzyński</a>. </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mini-GIMP template project for Image processing course maintained by <a href="https://github.com/andre-wojtowicz">andre-wojtowicz</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>

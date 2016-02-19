@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <UIVisualizer ServiceId="{A452AFEA-3DF6-46BB-9177-C0B08F318025}" Id="1" MenuName="Add to Image Watch"/>
+  <Type Name="PNM">
+    <UIVisualizer ServiceId="{A452AFEA-3DF6-46BB-9177-C0B08F318025}" Id="1" />
+  </Type>
+
+  <Type Name="PNM">
+    <Expand>
+      <Synthetic Name="[type]">
+        <DisplayString>UINT8</DisplayString>
+      </Synthetic>
+      <Synthetic Name="[channels]" Condition="d->format==5">
+        <DisplayString>RGBA</DisplayString>
+      </Synthetic>
+      <Synthetic Name="[channels]" Condition="d->format==4">
+        <DisplayString>RGBA</DisplayString>
+      </Synthetic>
+      <Synthetic Name="[channels]" Condition="d->format==3">
+        <DisplayString>1</DisplayString>
+      </Synthetic>
+      <Item Name="[width]">d->width</Item>
+      <Item Name="[height]">d->height</Item>
+      <Item Name="[data]">d->data</Item>
+      <Item Name="[stride]">d->bytes_per_line</Item>
+    </Expand>
+  </Type>  
+</AutoVisualizer>

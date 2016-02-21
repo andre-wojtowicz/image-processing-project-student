@@ -21,7 +21,7 @@ The program has the following image processing procedures to be completed:
 13. corners detection (Harris),
 14. segmentation (watershed).
 
-**The completed version of the project is stored on the different private repository**. It is stored for lecturer's as a helpfull tool to assess students' solutions. If you need it, please send me an e-mail.
+**The completed version of the project is stored on the private repository**. It is stored for lecturer's as a helpfull tool to assess students' solutions. If you need it, please send me an e-mail.
 
 # Screenshots
 

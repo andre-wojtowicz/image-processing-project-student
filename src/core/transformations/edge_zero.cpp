@@ -21,7 +21,7 @@ PNM* EdgeZeroCrossing::transform()
     double sigma = getParameter("sigma").toDouble();
     int    t     = getParameter("threshold").toInt();
 
-    PNM* newImage = new PNM(width, height, QImage::Format_Indexed8);
+    PNM* newImage = new PNM(width, height, QImage::Format_Grayscale8);
 
     qDebug() << Q_FUNC_INFO << "Not implemented yet!";
 

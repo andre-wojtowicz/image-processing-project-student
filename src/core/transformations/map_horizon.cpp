@@ -33,7 +33,7 @@ PNM* MapHorizon::transform()
         dy = -1;
     }
 
-    PNM* newImage = new PNM(width, height, QImage::Format_Indexed8);
+    PNM* newImage = new PNM(width, height, QImage::Format_Grayscale8);
 
     qDebug() << Q_FUNC_INFO << "Not implemented yet!";
 

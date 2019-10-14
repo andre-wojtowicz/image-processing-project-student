@@ -22,7 +22,7 @@ PNM* EdgeCanny::transform()
     int upper_thresh = getParameter("upper_threshold").toInt(),
         lower_thresh = getParameter("lower_threshold").toInt();
 
-    PNM* newImage = new PNM(width, height, QImage::Format_Indexed8);
+    PNM* newImage = new PNM(width, height, QImage::Format_Grayscale8);
 
     qDebug() << Q_FUNC_INFO << "Not implemented yet!";
 

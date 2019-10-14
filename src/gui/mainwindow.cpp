@@ -135,7 +135,7 @@ QString MainWindow::textFormat(QImage::Format format)
 {
     if (format == QImage::Format_RGB32)
         return "Color RGB 32-bit";
-    else if (format == QImage::Format_Indexed8)
+    else if (format == QImage::Format_Grayscale8)
         return "Grayscale 8-bit";
     else if (format == QImage::Format_Mono)
         return "Black & white 1-bit";

@@ -44,7 +44,7 @@ PNM::PNM(int width, int height, QImage::Format format) :
     {
     case QImage::Format_Mono:
         break;
-    case QImage::Format_Indexed8:
+    case QImage::Format_Grayscale8:
         this->setColorCount(256);
 
         for (int i = 0; i < 256; i++)

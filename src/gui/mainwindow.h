@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #define PROGRAM_NAME "PTO"
-#define PROGRAM_VER "3.1.3.37"
+#define PROGRAM_VER "3.1.3.38"
 #define DEFAULT_IMG "lenna_512x512.pnm"
 
 #include <QMainWindow>

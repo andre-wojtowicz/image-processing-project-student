@@ -21,7 +21,7 @@ void Tools::negativeImage()
     ImageViewer* iv = getViewer(); // Get the ImageViewer which holds the image.
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -45,7 +45,7 @@ void Tools::correctBrightnessContrastGamma()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -75,7 +75,7 @@ void Tools::histogramEqualize()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -87,7 +87,7 @@ void Tools::histogramStretch()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -113,7 +113,7 @@ void Tools::blurGauss()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -132,7 +132,7 @@ void Tools::blurLinear()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -152,7 +152,7 @@ void Tools::blurUniform()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -170,7 +170,7 @@ void Tools::binGradient()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -182,7 +182,7 @@ void Tools::binIterBimodal()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -194,7 +194,7 @@ void Tools::binManual()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -216,7 +216,7 @@ void Tools::binNiblack()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -234,7 +234,7 @@ void Tools::binOtsu()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -252,7 +252,7 @@ void Tools::noiseMedian()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -269,7 +269,7 @@ void Tools::noiseBilateral()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -294,7 +294,7 @@ void Tools::morphDilate()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -316,7 +316,7 @@ void Tools::morphErode()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -338,7 +338,7 @@ void Tools::morphOpen()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -360,7 +360,7 @@ void Tools::morphClose()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -387,7 +387,7 @@ void Tools::edgeSobel()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -399,7 +399,7 @@ void Tools::edgePrewitt()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -411,7 +411,7 @@ void Tools::edgeRoberts()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -424,7 +424,7 @@ void Tools::edgeLaplacian()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -444,7 +444,7 @@ void Tools::edgeZero()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -470,7 +470,7 @@ void Tools::mapHeight()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -483,7 +483,7 @@ void Tools::mapHorizon()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -524,7 +524,7 @@ void Tools::edgeCanny()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -549,7 +549,7 @@ void Tools::houghTransform()
     ImageViewer* iv = getViewer();
 
     if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Mono
-                                                          << QImage::Format_Indexed8
+                                                          << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -590,7 +590,7 @@ void Tools::cornerHarris()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 
@@ -633,7 +633,7 @@ void Tools::segmentation()
 {
     ImageViewer* iv = getViewer();
 
-    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Indexed8
+    if (!SupportedImageFormat(iv, QList<QImage::Format>() << QImage::Format_Grayscale8
                                                           << QImage::Format_RGB32))
         return;
 

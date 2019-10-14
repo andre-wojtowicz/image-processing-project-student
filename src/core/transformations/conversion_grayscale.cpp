@@ -17,7 +17,7 @@ PNM* ConversionGrayscale::transform()
     int width = image->width();
     int height = image->height();
 
-    PNM* newImage = new PNM(width, height, QImage::Format_Indexed8);
+    PNM* newImage = new PNM(width, height, QImage::Format_Grayscale8);
 
     if (image->format() == QImage::Format_Mono)
     {

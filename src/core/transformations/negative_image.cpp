@@ -33,9 +33,8 @@ PNM* NegativeImage::transform()
                 newImage->setPixel(x,y, color == Qt::white ? Qt::color0 : Qt::color1);
             }
     }
-    else if (image->format() == QImage::Format_Indexed8)
+    else if (image->format() == QImage::Format_Grayscale8) // Iterate over image space
     {
-        // Iterate over image space
         for (int x=0; x<width; x++)
             for (int y=0; y<height; y++)
             {
@@ -44,7 +43,7 @@ PNM* NegativeImage::transform()
                 int v = qGray(pixel);    // Get the 0-255 value of the L channel
                 v = PIXEL_VAL_MAX - v;
 
-                newImage->setPixel(x,y, v);
+                newImage->setPixel(x,y, QColor(v,v,v).rgb());
             }
     }
     else //if (image->format() == QImage::Format_RGB32)

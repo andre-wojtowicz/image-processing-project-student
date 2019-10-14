@@ -73,7 +73,7 @@ Main class to handle an image is **PNM** which inherits [QImage](http://qt-proje
  
 We are interested only in three formats of images:
  * **QImage::Format_Mono** - black and white,
- * **QImage::Format_Indexed8** - grayscale,
+ * **QImage::Format_Grayscale8** - grayscale,
  * **QImage::Format_RGB32** - 3-channels color.
  
 To get a value of a pixel from a desired channel some functions from [QColor](http://qt-project.org/doc/qt-5.1/qtgui/qcolor.html) will be helpful:
